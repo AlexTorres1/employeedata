@@ -11,10 +11,17 @@ var config = {
   var database = firebase.database();
 
 $('#btn').on("click",function(){
-  var name = $('#exampleInputEmail1').val();
-  var role = $('#exampleInputPassword1').val();
-  var startDate = $('#exampleInputEmail').val();
-  var rate = $('#exampleInputPassword').val();
+  var name = $('#name').val().trim();
+  var role = $('#role').val().trim();
+  var startDate = $('#startDate').val().trim();
+  var rate = $('#rate').val().trim();
+  
+  database.ref().push({
+    name: name,
+    role: role,
+    startDate: startDate,
+    rate: rate,
+  });
 
 
 })
