@@ -12,11 +12,13 @@ var config = {
 
 $('#btn').on("click",function(){
   var name = $('#exampleInputEmail1').val();
-  var rate = $('#exampleInputPassword1').val();
-  var date = $('#exampleInputEmail').val();
-  var monthlyRate = $('#exampleInputPassword').val();
+  var role = $('#exampleInputPassword1').val();
+  var startDate = $('#exampleInputEmail').val();
+  var rate = $('#exampleInputPassword').val();
+
+
 })
 
-database.on("value", function(snapchat){
+database.on("value", function(snapshot){
 
 })
