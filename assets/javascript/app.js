@@ -7,4 +7,19 @@ var config = {
     messagingSenderId: "1008780745263"
   };
   firebase.initializeApp(config);
+
   var database = firebase.database();
+
+  var name = $('#exampleInputEmail1').val();
+  var rate = $('#exampleInputPassword1').val();
+  var date = $('#exampleInputEmail').val();
+  var monthlyRate = $('#exampleInputPassword').val();
+
+
+$('#btn').on("click",function(){
+
+})
+
+database.on("value", function(snapchat){
+
+})
