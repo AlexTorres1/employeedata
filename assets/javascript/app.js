@@ -10,14 +10,11 @@ var config = {
 
   var database = firebase.database();
 
+$('#btn').on("click",function(){
   var name = $('#exampleInputEmail1').val();
   var rate = $('#exampleInputPassword1').val();
   var date = $('#exampleInputEmail').val();
   var monthlyRate = $('#exampleInputPassword').val();
-
-
-$('#btn').on("click",function(){
-
 })
 
 database.on("value", function(snapchat){
